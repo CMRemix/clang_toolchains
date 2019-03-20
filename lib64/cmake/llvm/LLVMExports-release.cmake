@@ -344,15 +344,15 @@ set_target_properties(LLVMOption PROPERTIES
 list(APPEND _IMPORT_CHECK_TARGETS LLVMOption )
 list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMOption "${_IMPORT_PREFIX}/lib64/libLLVMOption.a" )
 
-# Import target "LLVMOptRemarks" for configuration "Release"
-set_property(TARGET LLVMOptRemarks APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(LLVMOptRemarks PROPERTIES
+# Import target "LLVMRemarks" for configuration "Release"
+set_property(TARGET LLVMRemarks APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(LLVMRemarks PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib64/libLLVMOptRemarks.a"
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib64/libLLVMRemarks.a"
   )
 
-list(APPEND _IMPORT_CHECK_TARGETS LLVMOptRemarks )
-list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMOptRemarks "${_IMPORT_PREFIX}/lib64/libLLVMOptRemarks.a" )
+list(APPEND _IMPORT_CHECK_TARGETS LLVMRemarks )
+list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMRemarks "${_IMPORT_PREFIX}/lib64/libLLVMRemarks.a" )
 
 # Import target "LLVMDebugInfoDWARF" for configuration "Release"
 set_property(TARGET LLVMDebugInfoDWARF APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
@@ -1328,15 +1328,15 @@ set_target_properties(opt PROPERTIES
 list(APPEND _IMPORT_CHECK_TARGETS opt )
 list(APPEND _IMPORT_CHECK_FILES_FOR_opt "${_IMPORT_PREFIX}/bin/opt" )
 
-# Import target "OptRemarks" for configuration "Release"
-set_property(TARGET OptRemarks APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(OptRemarks PROPERTIES
-  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib64/libOptRemarks.so.9svn"
-  IMPORTED_SONAME_RELEASE "libOptRemarks.so.9svn"
+# Import target "Remarks" for configuration "Release"
+set_property(TARGET Remarks APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(Remarks PROPERTIES
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib64/libRemarks.so.9svn"
+  IMPORTED_SONAME_RELEASE "libRemarks.so.9svn"
   )
 
-list(APPEND _IMPORT_CHECK_TARGETS OptRemarks )
-list(APPEND _IMPORT_CHECK_FILES_FOR_OptRemarks "${_IMPORT_PREFIX}/lib64/libOptRemarks.so.9svn" )
+list(APPEND _IMPORT_CHECK_TARGETS Remarks )
+list(APPEND _IMPORT_CHECK_FILES_FOR_Remarks "${_IMPORT_PREFIX}/lib64/libRemarks.so.9svn" )
 
 # Import target "sancov" for configuration "Release"
 set_property(TARGET sancov APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)

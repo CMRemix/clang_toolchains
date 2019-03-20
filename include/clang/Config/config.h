@@ -55,7 +55,7 @@
 #define CLANG_HAVE_LIBXML 1
 
 /* Define if we have z3 and want to build it */
-/* #undef CLANG_ANALYZER_WITH_Z3 */
+#define CLANG_ANALYZER_WITH_Z3 1
 
 /* Define if we have sys/resource.h (rlimits) */
 #define CLANG_HAVE_RLIMITS 1
